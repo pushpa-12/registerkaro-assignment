@@ -1,23 +1,41 @@
-import logo from './logo.svg';
-import './App.css';
-
+import "./App.css";
+import About from "./Components/About";
+import Blog from "./Components/Blog";
+import Clients from "./Components/Clients";
+import Company from "./Components/Company";
+import CompanyLogo from "./Components/CompanyLogo";
+import EmailSub from "./Components/EmailSub";
+import Faq from "./Components/Faq";
+import Footer from "./Components/Footer";
+import Header from "./Components/Header/Header";
+import Main from "./Components/Main";
+import ManageService from "./Components/ManageService";
+import ProcessSection from "./Components/ProcessSection";
+import Service from "./Components/Service/Service";
+import Testimonial from "./Components/Testimonial";
+import VideoInstruction from "./Components/VideoInstruction";
+import WhyChoose from "./Components/WhyChoose";
+import WhyRegisterkaro from "./Components/WhyRegisterkaro";
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Header />
+      <Main/>
+      <Company />
+      <Service />
+      <About />
+      <WhyChoose />
+      <VideoInstruction />
+      <Clients/>
+      <ProcessSection/>
+      <Blog/>
+      <Testimonial/>
+      <Faq/>
+      <ManageService/>
+      <WhyRegisterkaro/>
+      <EmailSub/>
+      <CompanyLogo/>
+      <Footer/>
     </div>
   );
 }
